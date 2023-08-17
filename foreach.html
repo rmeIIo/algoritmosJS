@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var listaFuncionarios = ['Viviana', 'Rosangela', 'Miguel', 'Lucas', 'Fernanda']
+
+        console.log(listaFuncionarios)
+
+        listaFuncionarios.forEach(function(valor, indice, array){
+            //logica
+            console.log('indice ' + indice + ' | valor: ' + valor)
+            
+            if(valor == 'Lucas') {
+                array[indice] = 'Um novo valor'
+            }
+            
+        })
+
+        console.log(listaFuncionarios)
+    </script>
+</body>
+</html>
