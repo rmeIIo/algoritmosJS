@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+
+        //netflix
+        var video = []
+
+        video[1] = []
+        video[1]['nome'] = 'Heartstopper'
+        video[1]['categoria'] = 'Romance'
+
+        function getVideo(video) {
+            //logica
+            
+            
+            try {
+                console.log(video[0]['nome'])
+            } catch(e) {
+                console.log('Agora sim podemos tratar esse erro')
+            }
+            
+            finally {
+                console.log('Sempre passa por aqui (try / catch)')
+            } 
+
+            console.log('A aplicação não morreu')
+        }
+
+        getVideo(video)
+
+    </script>
+</body>
+</html>
